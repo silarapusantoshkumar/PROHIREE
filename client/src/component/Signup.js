@@ -324,7 +324,17 @@ const Login = (props) => {
     <Redirect to="/" />
   ) : (
     <Paper elevation={3} className={classes.body}>
-      <Grid container direction="column" spacing={4} alignItems="center">
+      <Grid container 
+       xs ={5}
+     direction="column" 
+     spacing={5} 
+     alignItems="center" 
+     justify = 'center' 
+      style={{
+        margin:"70px auto 50px auto",
+        padding:"20px",
+        boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
+    }}>
         <Grid item>
           <Typography variant="h3" component="h2">
             Signup
@@ -425,7 +435,7 @@ const Login = (props) => {
                 identifier={"resume"}
               />
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <FileUploadInput
                 className={classes.inputBox}
                 label="Profile Photo (.jpg/.png)"
@@ -441,7 +451,7 @@ const Login = (props) => {
                 handleInput={handleInput}
                 identifier={"profile"}
               />
-            </Grid>
+            </Grid> */}
           </>
         ) : (
           <>

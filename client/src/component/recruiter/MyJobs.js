@@ -175,8 +175,8 @@ const JobTile = (props) => {
             ))}
           </Grid>
         </Grid>
-        <Grid item container direction="column" xs={3}>
-          <Grid item xs>
+        <Grid item container direction="column" xs={3} spacing={2} style={{ margin: "auto 0px" }}>
+          <Grid item >
             <Button
               variant="contained"
               color="primary"

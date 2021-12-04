@@ -567,25 +567,25 @@ const ApplicationTile = (props) => {
             ))}
           </Grid>
         </Grid>
-        <Grid item container direction="column" xs={3}>
-          <Grid item>
+        <Grid item container direction="column" xs={2} spacing={2} style={{ margin: "auto 0px" }} >
+          {/* <Grid item>
             <Button
               variant="contained"
               className={classes.statusBlock}
               color="primary"
               onClick={() => getResume()}
             >
-              Download Resume
+              View Resume
             </Button>
-          </Grid>
-          <Grid item container xs>
+          </Grid> */}
+          <Grid item >
             {/* {buttonSet[application.status]} */}
             <Button
               variant="contained"
               color="primary"
               className={classes.statusBlock}
               style={{
-                background: "#09BC8A",
+                background: "#f44336",
               }}
               onClick={() => {
                 setOpenEndJob(true);

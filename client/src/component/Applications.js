@@ -125,7 +125,7 @@ const ApplicationTile = (props) => {
     accepted: "#09BC8A",
     rejected: "#D1345B",
     deleted: "#B49A67",
-    cancelled: "#FF8484",
+    cancelled: "#F44336",
     finished: "#4EA5D9",
   };
 
@@ -156,9 +156,10 @@ const ApplicationTile = (props) => {
             <Grid item>Joined On: {joinedOn.toLocaleDateString()}</Grid>
           ) : null}
         </Grid>
-        <Grid item container direction="column" xs={3}>
-          <Grid item xs>
-            <Paper
+        <Grid item container direction="column" xs={3} spacing={2} style={{ margin: "auto 0px" }}>
+          <Grid item >
+            
+            <Button
               className={classes.statusBlock}
               style={{
                 background: colorSet[application.status],
@@ -166,7 +167,7 @@ const ApplicationTile = (props) => {
               }}
             >
               {application.status}
-            </Paper>
+            </Button>
           </Grid>
           {application.status === "accepted" ||
           application.status === "finished" ? (

@@ -616,7 +616,7 @@ console.log(props)
             ))}
           </Grid>
         </Grid>
-        <Grid item container direction="column" xs={3}>
+        <Grid item container direction="column" xs={3} spacing={2} style={{ margin: "auto 0px" }}>
           <Grid item>
             <Button
               variant="contained"
@@ -624,7 +624,7 @@ console.log(props)
               color="primary"
               onClick={() => getResume()}
             >
-              Download Resume
+              View Resume
             </Button>
           </Grid>
           <Grid item container xs>

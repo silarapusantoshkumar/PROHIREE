@@ -7,7 +7,7 @@ const fs = require("fs");
 
 // MongoDB
 mongoose
-  .connect("mongodb+srv://deepak:Dipak1243@cluster0.o7rmv.mongodb.net/HobbyRooms?retryWrites=true&w=majority", {
+  .connect("mongodb+srv://deepak:dipak@1243@cluster0.o7rmv.mongodb.net/HobbyRooms?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

@@ -286,7 +286,7 @@ const Profile = (props) => {
                   identifier={"resume"}
                 />
               </Grid>
-              <Grid item>
+              {/* <Grid item>
                 <FileUploadInput
                   className={classes.inputBox}
                   label="Profile Photo (.jpg/.png)"
@@ -295,7 +295,7 @@ const Profile = (props) => {
                   handleInput={handleInput}
                   identifier={"profile"}
                 />
-              </Grid>
+              </Grid> */}
             </Grid>
             <Button
               variant="contained"

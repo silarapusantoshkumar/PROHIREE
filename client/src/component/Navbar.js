@@ -6,7 +6,7 @@ import {
   makeStyles,
   Box
 } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { useHistory , Link} from "react-router-dom";
 
 import isAuth, { userType } from "../lib/isAuth";
 
@@ -20,9 +20,17 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  text_color:{
-    backgroundColor:"#0404048a",
-  },
+  color:{
+    backgroundColor:"#4169e1"
+   },
+   textclr:{
+     color: "#ffff",
+     textDecoration:"none",
+     "&:hover": {
+       color:"#ffff",
+       textDecoration:"none",
+     }
+   }
 }));
 
 const Navbar = (props) => {
@@ -38,7 +46,7 @@ const Navbar = (props) => {
     <AppBar position="fixed" className={classes.text_color} >
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          Job Portal
+        <Link to="/" className={classes.textclr} >Job Portal</Link> 
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (
